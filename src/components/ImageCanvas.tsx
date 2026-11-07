@@ -6,6 +6,7 @@ import {
   type CSSProperties,
 } from 'react';
 import { Icon } from './Icons';
+import { useI18n } from '../i18n';
 import { downloadCanvasPng } from '../lib/export';
 
 export type Palette = 'inferno' | 'gray' | 'cool' | 'viridis';
@@ -130,6 +131,7 @@ export function ImageCanvas({
   maxHeight,
   downloadName,
 }: ImageCanvasProps) {
+  const { t } = useI18n();
   const wrapRef = useRef<HTMLDivElement>(null);
   const baseRef = useRef<HTMLCanvasElement>(null);
   const overlayRef = useRef<HTMLCanvasElement>(null);
@@ -297,7 +299,7 @@ export function ImageCanvas({
       {showControls && (
         <div className="image-controls">
           <label className="mini-field">
-            <span>Low</span>
+            <span>{t('Низький')}</span>
             <input
               type="range"
               min={0}
@@ -309,7 +311,7 @@ export function ImageCanvas({
             <output>{lowPct.toFixed(1)}%</output>
           </label>
           <label className="mini-field">
-            <span>High</span>
+            <span>{t('Високий')}</span>
             <input
               type="range"
               min={0.5}
@@ -324,10 +326,10 @@ export function ImageCanvas({
             className="select select-small"
             value={palette}
             onChange={(event) => setPalette(event.target.value as Palette)}
-            aria-label="Palette"
+            aria-label={t('Палітра')}
           >
             <option value="inferno">Inferno</option>
-            <option value="gray">Grey</option>
+            <option value="gray">{t('Сірий')}</option>
             <option value="cool">Cool</option>
             <option value="viridis">Viridis</option>
           </select>
@@ -338,12 +340,13 @@ export function ImageCanvas({
               disabled={!logAllowed}
               onChange={(event) => setLog(event.target.checked)}
             />
-            log
+            {t('лог')}
           </label>
           <button
             type="button"
             className="icon-btn"
-            title="Reset stretch"
+            title={t('Скинути розтяг')}
+            aria-label={t('Скинути розтяг')}
             onClick={() => {
               setLowPct(defaultLow);
               setHighPct(defaultHigh);
@@ -357,7 +360,8 @@ export function ImageCanvas({
             <button
               type="button"
               className="icon-btn"
-              title="Save PNG"
+              title={t('Зберегти PNG')}
+              aria-label={t('Зберегти PNG')}
               onClick={() => {
                 if (baseRef.current) void downloadCanvasPng(baseRef.current, downloadName);
               }}
@@ -368,7 +372,8 @@ export function ImageCanvas({
           <button
             type="button"
             className="icon-btn"
-            title="Fullscreen"
+            title={t('На весь екран')}
+            aria-label={t('На весь екран')}
             onClick={() => {
               const node = wrapRef.current;
               if (!node) return;
