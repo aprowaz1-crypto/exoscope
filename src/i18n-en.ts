@@ -1,0 +1,487 @@
+/**
+ * English translations keyed by the exact Ukrainian source string used in t().
+ * Missing keys fall back to Ukrainian at runtime.
+ */
+export const en: Record<string, string> = {
+  '0 — без бінінгу': '0 — no binning',
+  '5σ контраст': '5σ contrast',
+  '8/16/32-бітні цілі, 32/64-бітні дійсні, BSCALE/BZERO, багатоплощинні куби NAXIS=3, а також PNG/JPEG/WEBP.':
+    '8/16/32-bit integers, 32/64-bit floats, BSCALE/BZERO, NAXIS=3 data cubes, plus PNG/JPEG/WEBP.',
+  'ADI · RDI': 'ADI · RDI',
+  'ADI не є відкриттям: спекли, дифракційні піки та неточні кути можуть давати хибні кандидати. Потрібні повторні епохи та інші довжини хвиль.':
+    'ADI is not a discovery: speckles, diffraction spikes and inaccurate angles can produce false candidates. Repeat epochs and other wavelengths are required.',
+  'ADI/RDI, карта SNR, радіальний шум, 1σ/5σ криві контрастності, автоматичний пошук точкових джерел.':
+    'ADI/RDI, SNR map, radial noise, 1σ/5σ contrast curves, automatic point-source search.',
+  'BLS чутливий до червоного шуму та систематики. SDE — статистика пошуку, а не ймовірність відкриття; завжди дивіться на червоний шум і сусідні піки.':
+    'BLS is sensitive to red noise and systematics. SDE is a search statistic, not a discovery probability; always inspect red noise and neighbouring peaks.',
+  'BLS і транзитна модель': 'BLS and transit model',
+  'BLS і фіт.': 'BLS and fit.',
+  'BLS-пошук': 'BLS search',
+  'BLS-пошук періоду': 'BLS period search',
+  'BLS-пошук періоду, трапецієподібна модель, похибки параметрів':
+    'BLS period search, trapezoid model, parameter uncertainties',
+  'Box-Least-Squares сканує логарифмічну сітку періодів і сім тривалостей; для кожного періоду перебираються всі фази. Локальне уточнення звужує пік. Трапецієподібна модель (P, T₀, глибина, T₁₄, T₁₂) фітується Нелдером–Мідом у перетворених координатах; похибки — з чисельного гессіана.':
+    'Box-Least-Squares scans a logarithmic period grid and seven durations; all phases are tested for each period. A local refinement narrows the peak. A trapezoid model (P, T₀, depth, T₁₄, T₁₂) is fitted with Nelder–Mead in transformed coordinates; uncertainties come from the numerical Hessian.',
+  'ExoScope — це повний конвеєр аналізу зоряних зображень: від FITS-кадрів до кандидатів у екзопланети. Транзитна фотометрія з BLS-пошуком періоду та пряме зображення з висококонтрастним ADI/RDI.':
+    'ExoScope is a complete stellar image analysis pipeline: from FITS frames to exoplanet candidates. Transit photometry with BLS period search and direct imaging with high-contrast ADI/RDI.',
+  'ExoScope — інструмент для досліджень і навчання. Автоматичні кандидати потребують незалежного підтвердження, спектроскопії та перевірки на інструментальних артефактах.':
+    'ExoScope is a research and education tool. Automated candidates require independent confirmation, spectroscopy and checks for instrumental artefacts.',
+  'FITS (зображення та куби NAXIS=3), PNG, JPEG, WEBP. Обробка відбувається локально у браузері.':
+    'FITS (images and NAXIS=3 cubes), PNG, JPEG, WEBP. Processing happens locally in your browser.',
+  'FITS · куби · PNG': 'FITS · cubes · PNG',
+  'FITS та куби': 'FITS and cubes',
+  'FITS-парсер підтримує BITPIX 8/16/32/−32/−64, BSCALE/BZERO, GCOUNT/PCOUNT, куби NAXIS=3 та бінінг великих кадрів. Час береться з BJD_TDB, BJD, HJD, JD, MJD або DATE-OBS (з додаванням половини експозиції).':
+    'The FITS parser supports BITPIX 8/16/32/−32/−64, BSCALE/BZERO, GCOUNT/PCOUNT, NAXIS=3 cubes and binning of large frames. Time is taken from BJD_TDB, BJD, HJD, JD, MJD or DATE-OBS (with half the exposure added).',
+  'GAIN, e⁻/ADU': 'GAIN, e⁻/ADU',
+  'JD / BJD / DATE-OBS': 'JD / BJD / DATE-OBS',
+  'Odd–even': 'Odd–even',
+  'Odd–even, вторинний мінімум, зсув центроїда, red noise, блендинг':
+    'Odd–even, secondary minimum, centroid shift, red noise, blending',
+  'PARANG з FITS-заголовків або ручний крок між кадрами':
+    'PARANG from FITS headers or a manual step between frames',
+  'PARANG із заголовків': 'PARANG from headers',
+  'PNG-подібне радіальне кільцеве MAD-оцінювання шуму в комбінованому зображенні. SNR = залишок / локальна σ; кандидати — локальні максимуми вище порогу в кільці між мінімальною та максимальною відстанню.':
+    'PNG-like radial annulus MAD noise estimation in the combined image. SNR = residual / local σ; candidates are local maxima above the threshold in the annulus between the minimum and maximum separations.',
+  'PSF-віднімання, карта SNR і автоматичний пошук точкових джерел.':
+    'PSF subtraction, SNR map and automatic point-source detection.',
+  'PSF-референс.': 'PSF reference.',
+  'READNOISE, e⁻': 'READNOISE, e⁻',
+  RMS: 'RMS',
+  'Red noise': 'Red noise',
+  SDE: 'SDE',
+  'T₁₄': 'T₁₄',
+  'U-подібність': 'U-shape',
+  'Web Worker BLS': 'Web Worker BLS',
+  'X, px': 'X, px',
+  'Y, px': 'Y, px',
+  'Δmag': 'Δmag',
+  'Автоматичне вирівнювання кадрів і вибір зірок порівняння':
+    'Automatic frame alignment and comparison-star selection',
+  'Автоматичні перевірки на типові хибнопозитиви.':
+    'Automated checks for common false positives.',
+  'Ансамбль зірок порівняння зважується за оберненою дисперсією, змінні зорі відсіваються за RMS, застосовується сигма-кліпінг. Детрендинг — зважена лінійна регресія за часом, FWHM, небом, airmass і центроїдом.':
+    'The comparison-star ensemble is inverse-variance weighted, variable stars are rejected by RMS, and sigma clipping is applied. Detrending uses weighted linear regression against time, FWHM, sky, airmass and centroid.',
+  'Апертура × FWHM': 'Aperture × FWHM',
+  'Апертурна фотометрія': 'Aperture photometry',
+  'Апертурна фотометрія погано працює для насичених зірок, сильного блендингу та змінної прозорості. Веттинг попереджає, але не виправляє ці ефекти.':
+    'Aperture photometry performs poorly for saturated stars, strong blending and variable transparency. Vetting warns about these effects but does not correct them.',
+  'Базова лінія': 'Baseline',
+  'Без обертання (RDI)': 'No rotation (RDI)',
+  'Браузерний конвеєр для пошуку екзопланет транзитним методом і методом прямого зображення.':
+    'A browser pipeline for finding exoplanets with the transit method and direct imaging.',
+  'Бінований RMS': 'Binned RMS',
+  'Бінів фази': 'Phase bins',
+  'Бінінг, хвилин': 'Binning, minutes',
+  'Веттинг кандидата': 'Candidate vetting',
+  'Веттинг кандидатів': 'Candidate vetting',
+  'Веттинг.': 'Vetting.',
+  'Виберіть цільову зорю або центр системи. Фотометрія, BLS-пошук або ADI виконуються локально з прогресом.':
+    'Choose the target star or the system centre. Photometry, BLS search or ADI run locally with progress.',
+  'Використано кадрів': 'Frames used',
+  'Використовуйте власні спостереження або публічні архіви (MAST, NASA Exoplanet Archive, ESO). Дотримуйтесь умов використання архівів і цитуйте джерела.':
+    'Use your own observations or public archives (MAST, NASA Exoplanet Archive, ESO). Follow the archive terms of use and cite the sources.',
+  'Використовується без часових заголовків': 'Used when no time headers are present',
+  'Вирівнювання': 'Alignment',
+  'Вирівнювання.': 'Alignment.',
+  'Високий контраст': 'High contrast',
+  'Висококонтрастна обробка серії кадрів: вирівнювання, віднімання PSF, обертання поля ADI, карта SNR, крива контрастності та кандидати-компаньйони.':
+    'High-contrast processing of an image series: alignment, PSF subtraction, ADI field rotation, SNR map, contrast curve and companion candidates.',
+  'Вища крива означає кращу чутливість: на даній відстані можна виявити джерело з таким Δmag. Розрахунок спирається на радіальну MAD-оцінку шуму; він не враховує систематику PSF і помилки кутів.':
+    'A higher curve means better sensitivity: a source with that Δmag can be detected at that separation. The calculation relies on a radial MAD noise estimate; it does not account for PSF systematics or angle errors.',
+  'Виявлення': 'Detection',
+  'Вторинний мінімум': 'Secondary minimum',
+  'Відкрити аналіз зображень': 'Open imaging analysis',
+  'Відкрити транзитний аналіз': 'Open transit analysis',
+  'Відокремте світло планети від сяйва зорі. ADI/RDI-віднімання PSF, обертання поля, карта SNR, крива контрастності та пошук компаньйонів.':
+    'Separate the planet’s light from the star’s glare. ADI/RDI PSF subtraction, field rotation, SNR map, contrast curve and companion search.',
+  'Відстань, px': 'Separation, px',
+  'Відстань, ″': 'Separation, ″',
+  'Відсів змінних, ×': 'Variable rejection, ×',
+  'Геометрія поля': 'Field geometry',
+  'Глибина': 'Depth',
+  'Глибина транзиту виражається у ppm (10⁻⁶ від потоку). Контраст у прямому зображенні — відношення піку кандидата до піку зорі; Δmag = −2.5·log₁₀(контраст).':
+    'Transit depth is expressed in ppm (10⁻⁶ of the flux). Direct-imaging contrast is the ratio of the candidate peak to the stellar peak; Δmag = −2.5·log₁₀(contrast).',
+  'Головна': 'Home',
+  'Готово': 'Done',
+  'Граничний контраст 1σ і 5σ залежно від відстані від зорі.':
+    '1σ and 5σ limiting contrast as a function of separation from the star.',
+  'Дані не залишають ваш пристрій': 'Your data never leaves your device',
+  'Дані обробляються локально у браузері.': 'Data are processed locally in your browser.',
+  'Дані та час': 'Data and time',
+  'Демо': 'Demo',
+  'Демонстраційний набір': 'Demonstration dataset',
+  'Детрендинг': 'Detrending',
+  'Джерело кутів': 'Angle source',
+  'Джерело часу': 'Time source',
+  'Диференціальна фотометрія': 'Differential photometry',
+  'Диференціальна фотометрія з ансамблем зірок порівняння та детрендингом.':
+    'Differential photometry with a comparison-star ensemble and detrending.',
+  'Для ADI бажано понад 10° обертання. Інакше слабкі джерела можуть залишитися у залишках PSF.':
+    'ADI prefers more than 10° of field rotation. Otherwise faint sources may remain in the PSF residuals.',
+  'Для кожного радіального біна: 1σ і 5σ граничний контраст відносно піку зорі, переведений у Δmag. Крива показує, наскільки слабке джерело можна виявити на даній відстані.':
+    'For each radial bin: the 1σ and 5σ limiting contrast relative to the stellar peak, converted to Δmag. The curve shows how faint a source can be detected at a given separation.',
+  'Для найкращих результатів використовуйте серію з десятків–сотень кадрів, стабільне поле зору та не менше 3–5 зірок порівняння в кадрі.':
+    'For best results use a series of tens to hundreds of frames, a stable field of view and at least 3–5 comparison stars in the frame.',
+  'Документація': 'Documentation',
+  'Експорт': 'Export',
+  'Елонгація': 'Elongation',
+  'Жодних завантажень на сервер. Усі обчислення виконуються у вашому браузері; дані зникають після закриття вкладки.':
+    'No uploads to a server. All calculations run in your browser; data disappear when you close the tab.',
+  'Завантажити JSON': 'Download JSON',
+  'Завантажити демо-ADI': 'Load ADI demo',
+  'Завантажити демо-транзит': 'Load transit demo',
+  'Завантажити звіт Markdown': 'Download Markdown report',
+  'Завантажте FITS або зображення вище, щоб почати. Усе виконується локально.':
+    'Upload FITS or images above to begin. Everything runs locally.',
+  'Завантажте кадри': 'Upload frames',
+  'Завантажте серію кадрів зорі, виберіть ціль і пройдіть конвеєр: виявлення зірок → диференціальна фотометрія → BLS → фіт → веттинг.':
+    'Upload a series of stellar frames, choose the target and run the pipeline: star detection → differential photometry → BLS → fit → vetting.',
+  'Замінити': 'Replace',
+  'Запуск ADI/RDI': 'Starting ADI/RDI',
+  'Запустити ADI/RDI': 'Run ADI/RDI',
+  'Запустити демо': 'Run demo',
+  'Запустити фотометрію': 'Run photometry',
+  'Запустіть конвеєр': 'Run the pipeline',
+  'Звіт Markdown': 'Markdown report',
+  'Звіт містить параметри, події, веттинг і попередження.':
+    'The report contains parameters, events, vetting and warnings.',
+  'Згенеруйте синтетичну ADI-серію: 28 кадрів 256×256, обертання поля 42°, планета з контрастом 4×10⁻⁴.':
+    'Generate a synthetic ADI series: 28 frames of 256×256, 42° field rotation, a planet with 4×10⁻⁴ contrast.',
+  'Згенеруйте синтетичну серію з транзитом гарячого юпітера: 260 кадрів, 3 транзити, змінна зоря порівняння.':
+    'Generate a synthetic hot-Jupiter transit series: 260 frames, 3 transits, a variable comparison star.',
+  'Знайдіть періодичне затемнення зорі планетою. Від апертурної фотометрії та диференціальної кривої світла до BLS, фіту трапецією та веттингу хибнопозитивів.':
+    'Find periodic stellar dimming caused by a planet. From aperture photometry and differential light curves to BLS, trapezoid fitting and false-positive vetting.',
+  'Знайти зорі': 'Find stars',
+  'Значення': 'Value',
+  'Значення шуму оцінюються радіальними кільцями у комбінованому зображенні. Поріг 5σ — типовий для попереднього відбору; слабші кандидати потребують ручної перевірки.':
+    'Noise is estimated in radial annuli of the combined image. A 5σ threshold is typical for pre-selection; fainter candidates need manual inspection.',
+  'Зображення': 'Images',
+  'Зображення та кандидати': 'Images and candidates',
+  'Зорі та фотометрія': 'Stars and photometry',
+  'Зорі ще не виявлено': 'No stars detected yet',
+  'Зсув центроїда': 'Centroid shift',
+  'Зірок': 'Stars',
+  'Зірок максимум': 'Max stars',
+  'Зірок не знайдено. Зменште поріг виявлення або перевірте референсний кадр.':
+    'No stars found. Lower the detection threshold or check the reference frame.',
+  'Зірок порівняння': 'Comparison stars',
+  'Кадр ділиться на тайли; локальні медіана та MAD інтерполюються білінійно. Пікселі вище адаптивного порогу групуються у звʼязні компоненти. Зважений центроїд, FWHM та елонгація рахуються за другим моментом; насичені й витягнуті обʼєкти позначаються.':
+    'The frame is divided into tiles; local median and MAD are interpolated bilinearly. Pixels above an adaptive threshold are grouped into connected components. A weighted centroid, FWHM and elongation are computed from second moments; saturated and elongated objects are flagged.',
+  'Кадрів': 'Frames',
+  'Кадрів максимум': 'Max frames',
+  'Кандидат у прямому зображенні — це пік у залишках, а не підтверджена планета. Потрібні повторні епохи, кілька фільтрів, астрометрія та перевірка на інструментальні артефакти (спекли, дифракційні піки, стовпи детектора).':
+    'A direct-imaging candidate is a peak in the residuals, not a confirmed planet. Repeat epochs, multiple filters, astrometry and checks for instrumental artefacts (speckles, diffraction spikes, detector columns) are required.',
+  'Кандидати': 'Candidates',
+  'Кандидати CSV': 'Candidates CSV',
+  'Кандидати з SNR, контрастом, Δmag, відстанню та позиційним кутом':
+    'Candidates with SNR, contrast, Δmag, separation and position angle',
+  'Кандидатів': 'Candidates',
+  'Кандидатів вище порогу не знайдено': 'No candidates above the threshold',
+  'Карта SNR': 'SNR map',
+  'Карта SNR.': 'SNR map.',
+  'Карта SNR: залишок, поділений на локальну MAD-оцінку шуму в радіальному кільці. Шукайте піки поза межами центральної PSF.':
+    'SNR map: the residual divided by the local MAD noise estimate in a radial annulus. Look for peaks outside the central PSF.',
+  'Клік на «Обрати» перефітує модель для цього піку.':
+    'Clicking “Select” refits the model for that peak.',
+  'Клікніть на зорю, щоб вибрати ціль. Помаранчеве коло — цільова зоря; блакитні — всі виявлені джерела.':
+    'Click a star to select the target. The orange circle is the target; blue circles are all detected sources.',
+  'Клікніть на центр зорі, щоб задати точку відліку для ADI. За замовчуванням використовується найяскравіша зоря або підказка набору.':
+    'Click the star centre to set the ADI reference point. By default the brightest star or the dataset hint is used.',
+  'Кліпінг, σ': 'Clipping, σ',
+  'Код ExoScope розповсюджується за ліцензією MIT. Демонстраційні дані генеруються синтетично у браузері; жодні реальні зоряні кадри не вбудовані.':
+    'ExoScope is distributed under the MIT License. Demo data are generated synthetically in the browser; no real stellar frames are bundled.',
+  'Комбіноване': 'Combined',
+  'Комбіноване зображення після віднімання медіанної PSF та обертання залишків у спільну систему координат. Планета додається когерентно, статичні спекли — ні.':
+    'Combined image after median-PSF subtraction and rotation of the residuals into a common coordinate system. The planet adds coherently; static speckles do not.',
+  'Конвеєр чекає на кадри': 'The pipeline is waiting for frames',
+  'Конвеєр чекає на серію кадрів': 'The pipeline is waiting for an image series',
+  'Контраст': 'Contrast',
+  'Контраст CSV': 'Contrast CSV',
+  'Контрастність.': 'Contrast.',
+  'Крива контрастності': 'Contrast curve',
+  'Крива контрастності ADI': 'ADI contrast curve',
+  'Крива світла': 'Light curve',
+  'Крива світла.': 'Light curve.',
+  'Крок': 'Cadence',
+  'Крок, °/кадр': 'Step, °/frame',
+  'Крок, хвилин': 'Cadence, minutes',
+  'Кути PARANG із заголовків або ручне обертання поля':
+    'PARANG angles from headers or manual field rotation',
+  'Локальна карта фону, адаптивний поріг, звʼязні компоненти, субпіксельні центроїди, FWHM, елонгація та насичення.':
+    'Local background map, adaptive threshold, connected components, subpixel centroids, FWHM, elongation and saturation.',
+  'Ліцензія та дані': 'License and data',
+  'Макс. T₁₄, год': 'Max T₁₄, h',
+  'Макс. відстань, px': 'Max separation, px',
+  'Макс. кут': 'Max angle',
+  'Макс. період, діб': 'Max period, days',
+  'Максимальна відстань має бути більшою за мінімальну.':
+    'The maximum separation must be greater than the minimum.',
+  'Максимальний набір — близько 60 млн пікселів у памʼяті; більші кадри бінінгуються, куби обрізаються. Це свідомий компроміс для браузера.':
+    'The maximum dataset is about 60 million pixels in memory; larger frames are binned and cubes are truncated. This is a deliberate browser trade-off.',
+  'Максимум інструментів для аналізу зірок': 'A full toolbox for stellar analysis',
+  'Мале обертання поля': 'Small field rotation',
+  'Медіанна похибка': 'Median uncertainty',
+  'Медіанний PSF-референс, субпіксельне вирівнювання, ADI або RDI':
+    'Median PSF reference, subpixel alignment, ADI or RDI',
+  'Медіанний стек вирівняних кадрів дає референсну PSF. Для RDI/ADI віднімається цей референс; у режимі ADI залишки обертаються на кут поля (PARANG або ручний крок), після чого усереднюються. Планета, що обертається разом із полем, додається когерентно, а статичні спекли — ні.':
+    'The median stack of aligned frames provides the reference PSF. This reference is subtracted for RDI/ADI; in ADI mode the residuals are rotated by the field angle (PARANG or manual step) and then averaged. A planet rotating with the field adds coherently; static speckles do not.',
+  'Медіанний стек вирівняних кадрів. Це референсна PSF, яка віднімається від кожного кадру; центральна зоря тут не віднімається.':
+    'Median stack of aligned frames. This is the reference PSF subtracted from each frame; the central star is not subtracted here.',
+  'Метод 1': 'Method 1',
+  'Метод 2': 'Method 2',
+  'Мін. T₁₄, год': 'Min T₁₄, h',
+  'Мін. відстань, px': 'Min separation, px',
+  'Мін. кут': 'Min angle',
+  'Мін. період, діб': 'Min period, days',
+  'Набір до ~60 млн пікселів, кадри до 1536 px за найбільшою стороною (з бінінгом більших). Результати — кандидати, а не відкриття.':
+    'Datasets up to ~60 million pixels; frames up to 1536 px on the longest side (larger frames are binned). Results are candidates, not discoveries.',
+  'Найкращі піки': 'Best peaks',
+  'Найяскравіша або клік на зображенні': 'The brightest one or click on the image',
+  'Найяскравіша зоря знаходиться через box-фільтр і зважений центроїд. Кожен кадр зсувається субпіксельно (білінійна інтерполяція), щоб PSF зорі збігався з референсом.':
+    'The brightest star is found with a box filter and weighted centroid. Each frame is shifted subpixel-wise (bilinear interpolation) so that the stellar PSF matches the reference.',
+  'Налаштуйте виявлення, виберіть цільову зорю та виміряйте криву світла.':
+    'Configure detection, choose the target star and measure the light curve.',
+  'Налаштуйте відсікання, шумову модель і поріг виявлення кандидатів.':
+    'Configure truncation, the noise model and the candidate detection threshold.',
+  'Натисніть «Знайти зорі», щоб побудувати карту фону, знайти джерела та виміряти FWHM.':
+    'Press “Find stars” to build a background map, detect sources and measure FWHM.',
+  'Наукове застереження': 'Scientific caveat',
+  'Не вдалося завантажити дані': 'Could not load the data',
+  'Немає даних під рукою?': 'No data at hand?',
+  'Немає кадрів під рукою?': 'No frames at hand?',
+  'Обертання поля': 'Field rotation',
+  'Обмеження ADI.': 'ADI limitations.',
+  'Обмеження та коректність': 'Limitations and correctness',
+  'Оцінка враховує SNRt, кількість подій і кількість проблемних перевірок. Це не ймовірність і не підтвердження планети.':
+    'The score considers SNRt, the number of events and the number of problematic checks. It is neither a probability nor a planet confirmation.',
+  'Оцінюється подібнісне перетворення (масштаб + поворот + зсув) за зорями: гістограма зсувів дає початкове наближення, далі — ітеративне зіставлення за найближчим сусідом і зважений МНК.':
+    'A similarity transform (scale + rotation + shift) is estimated from stars: a shift histogram provides the initial guess, followed by iterative nearest-neighbour matching and weighted least squares.',
+  'Очистити': 'Clear',
+  'Параметр': 'Parameter',
+  'Параметри ADI/RDI': 'ADI/RDI parameters',
+  'Параметри моделі': 'Model parameters',
+  'Параметри транзиту': 'Transit parameters',
+  'Перевірки парних/непарних транзитів, вторинного мінімуму, центроїда, червоного шуму, форми, насичення та блендингу.':
+    'Checks for odd/even transits, secondary minimum, centroid, red noise, shape, saturation and blending.',
+  'Перевірте кандидата на інших епохах, виключіть зоряні плями та пульсації за допомогою фотометрії в інших фільтрах і підтвердьте період спектроскопією або архівними даними.':
+    'Check the candidate at other epochs, rule out starspots and pulsations with multi-filter photometry, and confirm the period with spectroscopy or archival data.',
+  'Перевірте та експортуйте': 'Review and export',
+  'Перевірте центр зорі, обертання поля та орієнтацію кадрів.':
+    'Check the stellar centre, field rotation and frame orientation.',
+  'Перевірте часову шкалу, кадри та референсне зображення.':
+    'Check the time scale, frames and reference image.',
+  'Перевіряються різниця глибин парних і непарних транзитів, вторинний мінімум на фазі 0.5, зсув центроїда, корельований шум бінованих залишків, форма T₁₂/T₁₄, насичення та найближча зоря-сусід.':
+    'The pipeline checks the odd/even depth difference, the secondary minimum at phase 0.5, centroid shift, correlated noise of binned residuals, T₁₂/T₁₄ shape, saturation and the nearest neighbouring star.',
+  'Перегляньте графіки, параметри, веттинг і контрастність. Збережіть звіт, криву світла та зображення.':
+    'Review charts, parameters, vetting and contrast. Save the report, light curve and images.',
+  'Перезапустити ADI': 'Restart ADI',
+  'Перезапустити BLS': 'Restart BLS',
+  'Перерахувати фотометрію': 'Recompute photometry',
+  'Перетягніть FITS-файли, куб або серію зображень. ExoScope визначить час, розмір і шкалу з заголовків.':
+    'Drag in FITS files, a cube or an image series. ExoScope reads time, size and scale from the headers.',
+  'Перетягніть кадри сюди або натисніть, щоб вибрати':
+    'Drag frames here or click to choose',
+  'Період': 'Period',
+  'Період на межі пошуку': 'Period at the search boundary',
+  'Період, діб': 'Period, days',
+  'Положення': 'Position',
+  'Полюйте на екзопланети': 'Hunt for exoplanets',
+  'Помилка обробки': 'Processing error',
+  'Попередження ADI': 'ADI warnings',
+  'Попередження кривої світла': 'Light-curve warnings',
+  'Попередження фотометрії': 'Photometry warnings',
+  'Попередження фіту': 'Fit warnings',
+  'Попередження читання файлів': 'File-reading warnings',
+  'Поріг': 'Threshold',
+  'Поріг SNR': 'SNR threshold',
+  'Потрібна серія з кількох кадрів однієї зорі з обертанням поля або зміною PSF.':
+    'A series of several frames of the same star with field rotation or PSF variation is required.',
+  'Потік': 'Flux',
+  'Похибка': 'Uncertainty',
+  'Похибки фотометрії обчислюються з урахуванням GAIN і READNOISE. Якщо їх немає в заголовках, використовуються значення з налаштувань — перевіряйте їх перед інтерпретацією SNRt.':
+    'Photometric uncertainties account for GAIN and READNOISE. If they are missing from the headers, values from the settings are used — check them before interpreting SNRt.',
+  'Початковий кут, °': 'Start angle, °',
+  'Почніть із даних': 'Start with data',
+  'Почніть із серії кадрів': 'Start with an image series',
+  'Пошук екзопланет за транзитами': 'Exoplanet search by transits',
+  'Пошук екзопланет прямим зображенням': 'Exoplanet search by direct imaging',
+  'Пошук зірок на референсному кадрі': 'Detecting stars in the reference frame',
+  'Пошук зірок.': 'Star detection.',
+  'Пошук періоду (BLS)': 'Period search (BLS)',
+  'Пошук періоду та тривалості, локальне уточнення, MCMC-подібні похибки через чисельну коваріацію, SNRt, χ²/dof.':
+    'Period and duration search, local refinement, MCMC-like uncertainties from numerical covariance, SNRt, χ²/dof.',
+  'Пошук і вимір зірок': 'Star detection and measurement',
+  'Приватність за замовчуванням': 'Privacy by default',
+  'Пряме зображення': 'Direct imaging',
+  'Підготовка фотометрії': 'Preparing photometry',
+  'Підтримуються FITS-зображення (NAXIS=2) і куби (NAXIS=3), а також PNG/JPEG/WEBP/BMP/TIFF, які читаються через Canvas. FITS-таблиці, компресія fpack і gzip не підтримуються.':
+    'FITS images (NAXIS=2) and cubes (NAXIS=3) are supported, along with PNG/JPEG/WEBP/BMP/TIFF read through Canvas. FITS tables, fpack compression and gzip are not supported.',
+  'Пік зорі': 'Stellar peak',
+  'Піки на кратних періодах (P/2, 2P) і гармоніках — звичайне явище. Порівняйте форму фазової кривої для кожного піку та перевірте, чи немає пропущених транзитів.':
+    'Peaks at multiples (P/2, 2P) and harmonics are common. Compare the phase-curve shape for each peak and check for missed transits.',
+  'Піксельна шкала, ″/px': 'Pixel scale, ″/px',
+  'Резервний початковий JD': 'Fallback start JD',
+  'Результат ADI: {view}': 'ADI result: {view}',
+  'Результат виявлення': 'Detection result',
+  'Рекомендовано': 'Recommended',
+  'Референс PSF': 'PSF reference',
+  'Референсний кадр': 'Reference frame',
+  'Референсний кадр із виявленими зорями': 'Reference frame with detected stars',
+  'Референсний кадр: виберіть центр зорі': 'Reference frame: choose the stellar centre',
+  'Робочий процес': 'Workflow',
+  'Розмах': 'Span',
+  'Розрив кільця, px': 'Annulus gap, px',
+  'Розширте діапазон періодів і перезапустіть BLS.': 'Extend the period range and restart BLS.',
+  'Ручні кути': 'Manual angles',
+  'Сканування періодів і тривалостей; спектр потужності та найкращі піки.':
+    'Scanning periods and durations; power spectrum and best peaks.',
+  'Спектр BLS': 'BLS spectrum',
+  'Спочатку виберіть центр зорі на зображенні.': 'First choose the stellar centre on the image.',
+  'Спробувати без даних:': 'Try without data:',
+  'Спробуйте знизити поріг SNR, зменшити мінімальну відстань або перевірити кути обертання поля.':
+    'Try lowering the SNR threshold, reducing the minimum separation or checking the field-rotation angles.',
+  'Стислий опис конвеєра, фізичних припущень і обмежень. Усі алгоритми реалізовані на TypeScript і виконуються локально у браузері.':
+    'A concise description of the pipeline, physical assumptions and limitations. All algorithms are implemented in TypeScript and run locally in the browser.',
+  'Субпіксельна апертура (4×4 субпікселів на піксель), кільце неба з медіаною та MAD. Похибка враховує фотонний шум, шум неба, шум зчитування та площу апертури. Для кожного кадру зоря зсувається за трансформацією.':
+    'Subpixel aperture (4×4 subpixels per pixel), sky annulus with median and MAD. The uncertainty includes photon noise, sky noise, read noise and aperture area. For each frame the star is shifted according to the transform.',
+  'Субпіксельні апертури, кільце неба, вирівнювання за зорями, ансамбль зірок порівняння, детрендинг і бінінг.':
+    'Subpixel apertures, sky annulus, star alignment, comparison-star ensemble, detrending and binning.',
+  'Точок': 'Points',
+  'Точок сітки': 'Grid points',
+  'Транзити': 'Transits',
+  'Транзитна фотометрія': 'Transit photometry',
+  'Транзитний конвеєр': 'Transit pipeline',
+  'Транзитні події': 'Transit events',
+  'Трапецієподібна модель, фазово-згортнута крива та похибки параметрів.':
+    'Trapezoid model, phase-folded curve and parameter uncertainties.',
+  'Три кроки від кадрів до кандидата': 'Three steps from frames to a candidate',
+  'Усе працює у браузері: жоден кадр не залишає ваш компʼютер. Результати можна експортувати у CSV, JSON, Markdown і PNG.':
+    'Everything runs in the browser: no frame leaves your computer. Results can be exported as CSV, JSON, Markdown and PNG.',
+  'Фазова крива транзиту': 'Transit phase curve',
+  'Фон': 'Background',
+  'Форма транзиту': 'Transit shape',
+  'Формат відображення': 'Display format',
+  'Формати та продуктивність': 'Formats and performance',
+  'Фотометрія виконується з кроком у кілька кадрів, щоб інтерфейс залишався живим. BLS рахується у Web Worker, тому прогрес не блокує вкладку. ADI обробляє до заданої кількості кадрів, рівномірно вибраних із серії.':
+    'Photometry runs in steps of several frames to keep the interface responsive. BLS runs in a Web Worker, so progress does not block the tab. ADI processes up to a specified number of frames selected evenly from the series.',
+  'Фотометрія завершена': 'Photometry complete',
+  'Фотометрія.': 'Photometry.',
+  'Фіт транзитної моделі та веттинг': 'Transit model fit and vetting',
+  'Це освітній та дослідницький інструмент, не сертифікований конвеєр. Не використовуйте його для офіційних астрономічних відкриттів без незалежної перевірки.':
+    'This is an educational and research tool, not a certified pipeline. Do not use it for official astronomical discoveries without independent verification.',
+  'Центр зорі': 'Stellar centre',
+  'Центр і вирівнювання.': 'Centre and alignment.',
+  'Центр, JD': 'Centre, JD',
+  'Центрувати на найяскравішій зорі': 'Centre on the brightest star',
+  'Цільова зоря': 'Target star',
+  'Час обробки': 'Processing time',
+  'Час у FITS обробляється в Julian Date. MJD переводиться додаванням 2 400 000.5. Для DATE-OBS (UTC) додається половина експозиції. Якщо часових заголовків немає, можна задати початковий JD і крок між кадрами вручну.':
+    'FITS time is handled in Julian Date. MJD is converted by adding 2,400,000.5. For DATE-OBS (UTC), half the exposure is added. If time headers are absent, you can set the start JD and frame cadence manually.',
+  'Часова мітка': 'Time label',
+  'Часові попередження': 'Time warnings',
+  'Часові системи та одиниці': 'Time systems and units',
+  'Чесні обмеження': 'Honest limitations',
+  'Читання даних.': 'Reading the data.',
+  'Ширина кільця, px': 'Annulus width, px',
+  'Шукати період': 'Search for a period',
+  'Шум': 'Noise',
+  'Що всередині': 'What is inside',
+  'Що далі?': 'What next?',
+  'Як працює ExoScope': 'How ExoScope works',
+  'Якщо обертання поля менше ~10°, ADI вироджується у RDI і планета може залишитися у залишках PSF. Кути PARANG мають бути узгоджені з напрямком обертання; перевіряйте знак кута.':
+    'If field rotation is less than ~10°, ADI degenerates into RDI and the planet may remain in the PSF residuals. PARANG angles must match the rotation direction; check the sign of the angle.',
+  'Якщо у FITS немає часу': 'If the FITS files have no time',
+  кадр: 'frame',
+  'змішані джерела часу': 'mixed time sources',
+  'заданий JD': 'specified JD',
+  'резервний час': 'fallback time',
+  'вручну задані кути': 'manual angles',
+  'без обертання (RDI)': 'no rotation (RDI)',
+  'абсолютний час': 'absolute time',
+  апертура: 'aperture',
+  'базова лінія': 'baseline',
+  'без тренду': 'no trend',
+  'біновані залишки / фотонний': 'binned residuals / photon',
+  бінів: 'bins',
+  бінінг: 'binning',
+  'вище порогу': 'above threshold',
+  'внутрішня межа пошуку': 'inner search boundary',
+  'внутрішня сітка': 'internal grid',
+  'відносний час': 'relative time',
+  'відносно типового RMS': 'relative to the typical RMS',
+  'відстань, кутових секунд': 'separation, arcseconds',
+  глибина: 'depth',
+  год: 'h',
+  годин: 'hours',
+  'граничний Δmag': 'limiting Δmag',
+  дані: 'data',
+  'демо-ADI': 'ADI demo',
+  'демо-транзит': 'transit demo',
+  детрендинг: 'detrending',
+  'для кандидатів': 'for candidates',
+  діб: 'days',
+  з: 'of',
+  'з FITS або вручну': 'from FITS or manually',
+  'за зорями': 'by stars',
+  'зірок порівняння': 'comparison stars',
+  кадрів: 'frames',
+  кандидат: 'candidate',
+  кандидатів: 'candidates',
+  'карта SNR': 'SNR map',
+  квадратичний: 'quadratic',
+  'комбіноване зображення': 'combined image',
+  'куби NAXIS=3, 8–64 біт': 'NAXIS=3 cubes, 8–64 bit',
+  локально: 'local',
+  'локально у браузері': 'locally in the browser',
+  лінійний: 'linear',
+  медіана: 'median',
+  'медіанний інтервал': 'median interval',
+  'методи пошуку': 'search methods',
+  модель: 'model',
+  'найкращий score': 'best score',
+  насичена: 'saturated',
+  небо: 'sky',
+  'немає PARANG': 'no PARANG',
+  'нормований потік': 'normalised flux',
+  обертання: 'rotation',
+  обрано: 'selected',
+  обрати: 'select',
+  'обробка завершена': 'processing complete',
+  'період, діб': 'period, days',
+  'полювання на екзопланети': 'exoplanet hunting',
+  'порядковий номер': 'frame index',
+  'потрібно ≥2 кадри': 'at least 2 frames required',
+  пік: 'peak',
+  'референсна PSF': 'reference PSF',
+  'розсіяння навколо 1': 'scatter around 1',
+  'рівномірно з серії': 'evenly from the series',
+  с: 's',
+  точки: 'points',
+  точок: 'points',
+  'у браузері · без сервера · open source': 'in the browser · serverless · open source',
+  'у власних зоряних кадрах': 'in your own stellar frames',
+  'увімкніть бінінг': 'enable binning',
+  фаза: 'phase',
+  'фотометрія готова': 'photometry ready',
+  хв: 'min',
+  центр: 'centre',
+  центроїд: 'centroid',
+  час: 'time',
+  'шкала невідома': 'scale unknown',
+  'Глибина близька до нуля: переконливого транзиту не видно.':
+    'Depth is near zero: no convincing transit is visible.',
+  'Покрито менше двох окремих транзитів.': 'Fewer than two separate transits are covered.',
+  'Період упирається в межу пошуку — розширте діапазон періодів.':
+    'The period is at the search boundary — widen the period range.',
+  'T12/T14 велике: профіль V-подібний, можлива змішувальна зоря або інша форма.':
+    'T12/T14 is large: the profile is V-shaped, suggesting a blended star or a different shape.',
+  'Не вдалося оцінити коваріацію параметрів — похибки наближені.':
+    'Could not estimate the parameter covariance — uncertainties are approximate.',
+  'Для BLS потрібно щонайменше 8 валідних точок.': 'BLS requires at least 8 valid points.',
+  'BLS worker failed': 'BLS worker failed',
+  'Швидко': 'Fast',
+  'Збалансовано': 'Balanced',
+  'Глибоко': 'Deep',
+  'Пресет BLS': 'BLS preset',
+  'оцінка': 'estimate',
+};
